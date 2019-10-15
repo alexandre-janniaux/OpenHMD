@@ -157,7 +157,7 @@ openhmd_lib = library(
 	'openhmd',
 	sources,
 	include_directories: include_directories('./include'),
-	c_args: c_args,
+	c_args: c_args + ['-DOHMD_STATIC'],
 	dependencies: deps,
 	install: true,
 	version: library_version,
